@@ -104,7 +104,7 @@ class DistortionClassifier:
     def __init__(
         self,
         model: str = "gpt-4o-mini",
-        min_similarity_threshold: float = 0.15,
+        min_similarity_threshold: float = 0.05,
     ):
         self.model = model
         self.min_similarity_threshold = min_similarity_threshold

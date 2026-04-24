@@ -24,12 +24,13 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 # Embedding model — cached once across all reruns
 # ---------------------------------------------------------------------------
-@st.cache_resource
-def _load_embedding_model():
+@st.cache_resource(show_spinner="Loading embedding model...")
+def _get_embedding_model():
     try:
         from sentence_transformers import SentenceTransformer
-        return SentenceTransformer("all-MiniLM-L6-v2")
-    except Exception:
+        model = SentenceTransformer("all-MiniLM-L6-v2")
+        return model
+    except Exception as e:
         return None
 
 
@@ -126,8 +127,7 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # Pre-load embedding model once (cached across reruns)
 # ---------------------------------------------------------------------------
-with st.spinner("Loading embedding model..."):
-    _load_embedding_model()
+_get_embedding_model()
 
 # ---------------------------------------------------------------------------
 # Tabs

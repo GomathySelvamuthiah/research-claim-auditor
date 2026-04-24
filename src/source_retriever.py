@@ -198,6 +198,10 @@ class SourceRetriever:
                 vec /= norm
             return vec.tolist()
         except Exception:
+            logger.warning(
+                "sentence-transformers unavailable, using pseudo_embed fallback "
+                "— similarity scores will be unreliable"
+            )
             return self._pseudo_embed(text)
 
     def _cosine_search(self, query_vector: list[float], k: int) -> list[RetrievalResult]:
