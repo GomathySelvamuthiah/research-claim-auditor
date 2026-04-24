@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research Claim Auditor — Citation Integrity Detection</title>
-  <meta name="description" content="An agentic RAG system that detects citation distortion in academic papers using Claude and FAISS."/>
+  <meta name="description" content="An agentic RAG system that detects citation distortion in academic papers using GPT-4o-mini and FAISS."/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <style>
     /* ── Reset & Base ─────────────────────────────────────────────────── */
@@ -331,7 +331,7 @@
           <div class="step-num">1</div>
           <span class="step-icon">📄</span>
           <h3>Extract Claims</h3>
-          <p>Claude Haiku parses each sentence containing a citation marker and extracts atomic, structured claim objects with claim strength and hedging language.</p>
+          <p>GPT-4o-mini parses each sentence containing a citation marker and extracts atomic, structured claim objects with claim strength and hedging language.</p>
         </div>
       </div>
       <div class="step-arrow">→</div>
@@ -349,7 +349,7 @@
           <div class="step-num">3</div>
           <span class="step-icon">🤖</span>
           <h3>Classify Distortion</h3>
-          <p>Claude applies a 5-type distortion taxonomy. The Silent Failure Test checks logical support — not just topical match. Retraction Watch flags retracted sources in parallel.</p>
+          <p>GPT-4o-mini applies a 5-type distortion taxonomy. The Silent Failure Test checks logical support — not just topical match. Retraction Watch flags retracted sources in parallel.</p>
         </div>
       </div>
       <div class="step-arrow">→</div>
@@ -488,7 +488,7 @@
   <div class="container">
     <h2 class="section-title">Built With</h2>
     <div class="chips">
-      <span class="chip">Anthropic Claude</span>
+      <span class="chip">OpenAI GPT-4o-mini</span>
       <span class="chip">FAISS</span>
       <span class="chip">sentence-transformers</span>
       <span class="chip">OpenAlex API</span>
@@ -509,7 +509,7 @@
     <p>Gomathy Selvamuthiah &middot; NUID 002410534</p>
     <p style="margin-top:8px;">
       <a href="https://github.com/GomathySelvamuthiah/research-claim-auditor" target="_blank" rel="noopener">GitHub</a>
-      &nbsp;&middot;&nbsp; Powered by Anthropic Claude + RAG
+      &nbsp;&middot;&nbsp; Powered by OpenAI GPT-4o-mini + RAG
     </p>
   </div>
 </footer>
