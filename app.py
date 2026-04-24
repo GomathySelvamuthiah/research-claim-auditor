@@ -316,7 +316,7 @@ with tab1:
                 try:
                     from src.visual_report import generate_audit_infographic
                     chart_bytes = generate_audit_infographic(report)
-                    st.image(chart_bytes, caption="Claim-by-claim audit results", use_column_width=True)
+                    st.image(chart_bytes, caption="Claim-by-claim audit results", use_container_width=True)
                     st.download_button("📊 Download Chart", data=chart_bytes, file_name="audit_chart.png", mime="image/png")
                 except Exception as e:
                     st.error(f"Chart generation failed: {e}")
