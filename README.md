@@ -1,5 +1,14 @@
 # Research Claim Auditor
 
+## 🔗 Submission Links
+
+| Item | Link |
+|------|------|
+| **Live Demo** | [research-claim-auditor.streamlit.app](https://research-claim-auditor-8kbmj6f5xzce7fgmqxcwtj.streamlit.app) |
+| **GitHub Pages** | [gomathyselvamuthiah.github.io/research-claim-auditor](https://gomathyselvamuthiah.github.io/research-claim-auditor) |
+| **Demo Video** | [demo_video.mp4](https://github.com/GomathySelvamuthiah/research-claim-auditor/blob/main/demo_video.mp4) |
+| **Documentation PDF** | [outputs/documentation.pdf](https://github.com/GomathySelvamuthiah/research-claim-auditor/blob/main/outputs/documentation.pdf) |
+
 An agentic RAG system for detecting citation distortions and retracted sources in academic papers. The system extracts cited claims from a paper, retrieves the original source passages via dense vector search, classifies each claim for distortion type and severity using Claude, flags retracted references, and produces a structured audit report.
 
 ---
