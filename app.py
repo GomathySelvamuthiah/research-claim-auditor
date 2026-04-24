@@ -22,6 +22,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ---------------------------------------------------------------------------
+# Embedding model — cached once across all reruns
+# ---------------------------------------------------------------------------
+@st.cache_resource
+def _load_embedding_model():
+    try:
+        from sentence_transformers import SentenceTransformer
+        return SentenceTransformer("all-MiniLM-L6-v2")
+    except Exception:
+        return None
+
+
+# ---------------------------------------------------------------------------
 # Pipeline import (isolated so a missing API key doesn't crash the whole UI)
 # ---------------------------------------------------------------------------
 try:
@@ -110,6 +122,12 @@ with st.sidebar:
     st.markdown("Built by **Gomathy Selvamuthiah** | Generative AI Discovery")
     st.markdown("[GitHub](https://github.com)")
 
+
+# ---------------------------------------------------------------------------
+# Pre-load embedding model once (cached across reruns)
+# ---------------------------------------------------------------------------
+with st.spinner("Loading embedding model..."):
+    _load_embedding_model()
 
 # ---------------------------------------------------------------------------
 # Tabs
