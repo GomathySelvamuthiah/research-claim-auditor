@@ -1,0 +1,426 @@
+{
+  "generated_at": "2026-04-23T21:49:27.480301+00:00",
+  "total_pairs": 50,
+  "diversity_stats": {
+    "total_pairs": 50,
+    "class_distribution": {
+      "accurate": 10,
+      "certainty_inflation": 10,
+      "causal_overclaim": 10,
+      "scope_inflation": 10,
+      "cherry_picking": 10
+    },
+    "domain_distribution": {
+      "oncology": 10,
+      "cardiology": 10,
+      "neuroscience": 10,
+      "psychiatry": 10,
+      "epidemiology": 5,
+      "pharmacology": 5
+    },
+    "avg_citing_claim_words": 15.0,
+    "avg_source_passage_words": 21.5
+  },
+  "pairs": [
+    {
+      "citing_claim": "Recent studies demonstrate that combining immunotherapy with chemotherapy significantly improves survival rates in advanced melanoma.",
+      "source_passage": "Our findings indicate that patients with advanced melanoma who received a combination of immunotherapy and chemotherapy showed a notable improvement in their survival rates compared to those who received chemotherapy alone.",
+      "distortion_type": "accurate",
+      "domain": "oncology",
+      "distortion_explanation": "The citing claim accurately reflects the findings of the source passage without introducing any misleading information.",
+      "id": 1
+    },
+    {
+      "citing_claim": "Recent studies indicate that regular physical activity can enhance cardiovascular health among adults.",
+      "source_passage": "Our findings suggest that regular physical activity may have positive effects on cardiovascular health in adults.",
+      "distortion_type": "accurate",
+      "domain": "cardiology",
+      "distortion_explanation": "The citing claim accurately reflects the source passage but removes the hedging 'may', which slightly increases the certainty of the assertion.",
+      "id": 2
+    },
+    {
+      "citing_claim": "Recent research indicates that synaptic plasticity significantly contributes to learning and memory processes in the brain.",
+      "source_passage": "The findings suggest that synaptic plasticity plays an important role in the mechanisms underlying learning and memory.",
+      "distortion_type": "accurate",
+      "domain": "neuroscience",
+      "distortion_explanation": "While both statements convey the importance of synaptic plasticity in learning and memory, the citing claim uses stronger language than the original source, which includes a qualifier.",
+      "id": 3
+    },
+    {
+      "citing_claim": "Recent studies indicate that mindfulness-based interventions can significantly reduce symptoms of anxiety and depression in clinical populations.",
+      "source_passage": "Research has shown that mindfulness-based interventions may lead to reductions in symptoms of anxiety and depression among certain clinical populations.",
+      "distortion_type": "accurate",
+      "domain": "psychiatry",
+      "distortion_explanation": "The citing claim faithfully represents the findings of the source but omits the hedging language, suggesting more certainty than is supported by the original text.",
+      "id": 4
+    },
+    {
+      "citing_claim": "Recent studies indicate that air pollution is linked to an increased risk of cardiovascular diseases.",
+      "source_passage": "Several studies have suggested a link between air pollution and an increased risk of cardiovascular diseases.",
+      "distortion_type": "accurate",
+      "domain": "epidemiology",
+      "distortion_explanation": "The claim accurately reflects the source's assertion but uses a more definitive wording, potentially leading to misinterpretation of the strength of the evidence.",
+      "id": 5
+    },
+    {
+      "citing_claim": "Recent studies demonstrate that drug X significantly improves outcomes in patients with condition Y.",
+      "source_passage": "Our findings indicate that drug X could improve outcomes in a specific subset of patients diagnosed with condition Y.",
+      "distortion_type": "accurate",
+      "domain": "pharmacology",
+      "distortion_explanation": "The citing claim accurately reflects the source passage without distortion; however, it suggests a broader effectiveness than the research indicates.",
+      "id": 6
+    },
+    {
+      "citing_claim": "Recent studies demonstrate that immunotherapy significantly improves overall survival in patients with advanced melanoma.",
+      "source_passage": "Immunotherapy has been shown in several studies to improve overall survival rates among patients diagnosed with advanced melanoma.",
+      "distortion_type": "accurate",
+      "domain": "oncology",
+      "distortion_explanation": "The citation accurately represents the source passage, maintaining the focus on survival improvements without introducing errors.",
+      "id": 7
+    },
+    {
+      "citing_claim": "Recent studies show that statin therapy significantly reduces cardiovascular events in high-risk patients.",
+      "source_passage": "In a recent clinical trial, statin therapy was associated with a reduction in the incidence of cardiovascular events among patients identified as high risk.",
+      "distortion_type": "accurate",
+      "domain": "cardiology",
+      "distortion_explanation": "The citing claim accurately represents the source passage but rephrases it in a way that emphasizes the effect of statins more strongly than the original.",
+      "id": 8
+    },
+    {
+      "citing_claim": "Dendritic spine density in the hippocampus is crucial for memory performance, as observed in both human and animal studies.",
+      "source_passage": "Dendritic spine density in the hippocampus has been linked to memory performance, with observations made primarily in animal studies.",
+      "distortion_type": "accurate",
+      "domain": "neuroscience",
+      "distortion_explanation": "The citing claim accurately reflects the importance of dendritic spines but extends the observations to human studies without explicit evidence from the source.",
+      "id": 9
+    },
+    {
+      "citing_claim": "Recent research indicates that mindfulness-based interventions can effectively reduce symptoms of anxiety and depression in clinical settings.",
+      "source_passage": "Mindfulness-based interventions may help reduce symptoms of anxiety and depression, particularly in clinical populations.",
+      "distortion_type": "accurate",
+      "domain": "psychiatry",
+      "distortion_explanation": "The citing claim accurately reflects the essence of the source passage but uses stronger language by implying effectiveness rather than suggesting potential benefits.",
+      "id": 10
+    },
+    {
+      "citing_claim": "Recent advances in immunotherapy have proven effective in significantly improving patient outcomes in melanoma.",
+      "source_passage": "Recent advances in immunotherapy may improve patient outcomes in melanoma, but further research is needed to confirm these observations.",
+      "distortion_type": "certainty_inflation",
+      "domain": "oncology",
+      "distortion_explanation": "The citing claim presents the potential benefits of immunotherapy as a definitive improvement, while the source hedges its assertion with 'may' and underscores the need for further research.",
+      "id": 11
+    },
+    {
+      "citing_claim": "Increased physical activity significantly improves cardiac health outcomes.",
+      "source_passage": "Increased physical activity may suggest improvements in cardiac health outcomes.",
+      "distortion_type": "certainty_inflation",
+      "domain": "cardiology",
+      "distortion_explanation": "The citing claim presents a definitive assertion about the effects of physical activity on cardiac health, omitting the hedging language from the source that indicates uncertainty.",
+      "id": 12
+    },
+    {
+      "citing_claim": "The findings clearly demonstrate that specific neural pathways are responsible for memory enhancement.",
+      "source_passage": "The results suggest that certain neural pathways may play a role in memory enhancement.",
+      "distortion_type": "certainty_inflation",
+      "domain": "neuroscience",
+      "distortion_explanation": "The citing claim presents the findings as definitive, whereas the source indicates uncertainty and suggests a possibility.",
+      "id": 13
+    },
+    {
+      "citing_claim": "Exposure to early trauma is known to significantly increase the risk of developing anxiety disorders later in life.",
+      "source_passage": "Exposure to early trauma may increase the risk of developing anxiety disorders later in life.",
+      "distortion_type": "certainty_inflation",
+      "domain": "psychiatry",
+      "distortion_explanation": "The citing claim presents the association between early trauma and anxiety disorders as a definitive fact, omitting the original source's hedging language that indicates uncertainty.",
+      "id": 14
+    },
+    {
+      "citing_claim": "Higher levels of air pollution are directly linked to increased rates of respiratory diseases.",
+      "source_passage": "Our findings suggest that higher levels of air pollution may be associated with increased rates of respiratory diseases in urban populations.",
+      "distortion_type": "certainty_inflation",
+      "domain": "epidemiology",
+      "distortion_explanation": "The citing claim omits the hedging language present in the source, presenting the association as a direct link rather than a suggested relationship.",
+      "id": 15
+    },
+    {
+      "citing_claim": "The administration of Drug X significantly reduces the incidence of hypertension in patients.",
+      "source_passage": "Drug X may reduce the incidence of hypertension in some patients, according to preliminary findings.",
+      "distortion_type": "certainty_inflation",
+      "domain": "pharmacology",
+      "distortion_explanation": "The citing claim presents the effect of Drug X as definitive, omitting the hedging language used in the source that indicates uncertainty.",
+      "id": 16
+    },
+    {
+      "citing_claim": "Recent studies confirm that patients undergoing immunotherapy have significantly improved survival rates.",
+      "source_passage": "Data suggest that patients undergoing immunotherapy may experience improved survival rates compared to traditional treatments.",
+      "distortion_type": "certainty_inflation",
+      "domain": "oncology",
+      "distortion_explanation": "The citation transforms a hedged statement about improved survival rates into a definitive claim, enhancing the certainty of the results.",
+      "id": 17
+    },
+    {
+      "citing_claim": "Recent studies demonstrate that early intervention significantly reduces cardiac events in high-risk patients.",
+      "source_passage": "Early intervention may reduce the risk of cardiac events in certain high-risk patient populations.",
+      "distortion_type": "certainty_inflation",
+      "domain": "cardiology",
+      "distortion_explanation": "The citing claim omits the hedging language from the source passage, suggesting a definitive outcome where only a possibility was presented.",
+      "id": 18
+    },
+    {
+      "citing_claim": "Findings indicate that synaptic plasticity is crucial for memory formation.",
+      "source_passage": "The results suggest that synaptic plasticity may play a significant role in memory formation.",
+      "distortion_type": "certainty_inflation",
+      "domain": "neuroscience",
+      "distortion_explanation": "The citing claim presents a definitive assertion rather than the hedged language used in the source, which introduces uncertainty.",
+      "id": 19
+    },
+    {
+      "citing_claim": "Recent research confirms that cognitive behavioral therapy is highly effective in treating anxiety disorders.",
+      "source_passage": "The findings suggest that cognitive behavioral therapy may be an effective approach for treating anxiety disorders, but further research is needed to establish definitive conclusions.",
+      "distortion_type": "certainty_inflation",
+      "domain": "psychiatry",
+      "distortion_explanation": "The citing claim asserts certainty about the effectiveness of cognitive behavioral therapy, omitting the hedging language and the need for further research present in the source.",
+      "id": 20
+    },
+    {
+      "citing_claim": "Increased exposure to specific chemotherapy agents leads to significantly improved survival rates in patients with advanced breast cancer.",
+      "source_passage": "Higher exposure to certain chemotherapy agents is correlated with better survival rates observed in a subset of patients with advanced breast cancer.",
+      "distortion_type": "causal_overclaim",
+      "domain": "oncology",
+      "distortion_explanation": "The citing claim implies a direct cause-and-effect relationship where the source only identifies a correlation without establishing causation.",
+      "id": 21
+    },
+    {
+      "citing_claim": "Increased dietary sodium intake directly leads to higher rates of hypertension, as shown in various studies.",
+      "source_passage": "Studies have shown a correlation between increased dietary sodium intake and higher rates of hypertension in certain populations.",
+      "distortion_type": "causal_overclaim",
+      "domain": "cardiology",
+      "distortion_explanation": "The citing claim incorrectly asserts a direct causal relationship between sodium intake and hypertension, while the source only indicates a correlation observed in specific populations.",
+      "id": 22
+    },
+    {
+      "citing_claim": "The findings demonstrate that chronic stress directly causes changes in synaptic plasticity in the adult brain.",
+      "source_passage": "Our data suggest a correlation between chronic stress and alterations in synaptic plasticity in adult animals.",
+      "distortion_type": "causal_overclaim",
+      "domain": "neuroscience",
+      "distortion_explanation": "The citing claim asserts a direct causation, while the source merely suggests a correlation without establishing a causal link.",
+      "id": 23
+    },
+    {
+      "citing_claim": "Recent findings indicate that childhood trauma directly causes the development of major depressive disorders in adolescents.",
+      "source_passage": "Our study suggests a correlation between childhood trauma and the presence of major depressive disorders in adolescents, though causative factors remain to be determined.",
+      "distortion_type": "causal_overclaim",
+      "domain": "psychiatry",
+      "distortion_explanation": "The claim asserts a direct causal relationship between childhood trauma and depression, whereas the source merely suggests a correlation without establishing causation.",
+      "id": 24
+    },
+    {
+      "citing_claim": "Increased air pollution levels are directly responsible for the rise in asthma cases among urban children.",
+      "source_passage": "The data indicate a correlation between elevated air pollution levels and higher reported asthma cases in urban children, suggesting that pollution may contribute to this trend.",
+      "distortion_type": "causal_overclaim",
+      "domain": "epidemiology",
+      "distortion_explanation": "The citing claim incorrectly asserts a direct causal relationship, while the source only reports a correlation and suggests a potential contribution.",
+      "id": 25
+    },
+    {
+      "citing_claim": "Increased dosage of Drug X directly enhances patient recovery rates in all demographics.",
+      "source_passage": "Our findings indicate that higher doses of Drug X are associated with improved recovery rates in the studied population, which primarily consisted of middle-aged adults.",
+      "distortion_type": "causal_overclaim",
+      "domain": "pharmacology",
+      "distortion_explanation": "The citing claim implies a direct causal relationship and broad applicability, whereas the source only reports a correlation within a specific demographic.",
+      "id": 26
+    },
+    {
+      "citing_claim": "High levels of vitamin D definitively reduce the risk of developing breast cancer.",
+      "source_passage": "Our findings suggest that higher serum levels of vitamin D are associated with a lower incidence of breast cancer, although causation cannot be determined from our study.",
+      "distortion_type": "causal_overclaim",
+      "domain": "oncology",
+      "distortion_explanation": "The citing claim asserts a definitive causal relationship between vitamin D levels and breast cancer risk, while the source passage only indicates an association without supporting causation.",
+      "id": 27
+    },
+    {
+      "citing_claim": "Increased physical activity directly reduces the risk of heart disease in all populations.",
+      "source_passage": "In our study, we observed a correlation between increased physical activity and reduced risk of heart disease among older adults in urban areas.",
+      "distortion_type": "causal_overclaim",
+      "domain": "cardiology",
+      "distortion_explanation": "The citation implies a direct causal relationship applicable to all populations, while the source only reports a correlation within a specific demographic.",
+      "id": 28
+    },
+    {
+      "citing_claim": "Increased neural activity in the prefrontal cortex directly leads to improved decision-making performance.",
+      "source_passage": "Our findings indicate a correlation between increased neural activity in the prefrontal cortex and decisions made under certain tasks.",
+      "distortion_type": "causal_overclaim",
+      "domain": "neuroscience",
+      "distortion_explanation": "The citing claim suggests a direct causal relationship, while the source only reports a correlation without establishing causation.",
+      "id": 29
+    },
+    {
+      "citing_claim": "Early childhood trauma directly causes a significant increase in the risk of developing anxiety disorders in later life.",
+      "source_passage": "There is a significant correlation between early childhood trauma and the development of anxiety disorders in adulthood, suggesting that childhood experiences may influence later mental health outcomes.",
+      "distortion_type": "causal_overclaim",
+      "domain": "psychiatry",
+      "distortion_explanation": "The citation asserts a direct cause-and-effect relationship based on a correlation mentioned in the source, which does not imply causation.",
+      "id": 30
+    },
+    {
+      "citing_claim": "Recent findings indicate that immunotherapy is effective across all cancer types and improves survival rates in patients.",
+      "source_passage": "In our study, immunotherapy demonstrated significant efficacy in a limited cohort of patients with advanced melanoma and non-small cell lung cancer.",
+      "distortion_type": "scope_inflation",
+      "domain": "oncology",
+      "distortion_explanation": "The claiming paper suggests broad applicability of immunotherapy, while the source only reports positive results from a limited patient cohort.",
+      "id": 31
+    },
+    {
+      "citing_claim": "Recent studies indicate that beta-blockers are effective for all patients with heart failure.",
+      "source_passage": "Our research focused on the efficacy of beta-blockers in a specific population of patients with systolic heart failure.",
+      "distortion_type": "scope_inflation",
+      "domain": "cardiology",
+      "distortion_explanation": "The citing claim incorrectly generalizes the findings from a study limited to a specific type of heart failure to all patients with heart failure.",
+      "id": 32
+    },
+    {
+      "citing_claim": "Recent studies indicate that neurogenesis significantly enhances cognitive functions across all age groups.",
+      "source_passage": "Our findings in rodent models suggest that neurogenesis plays a role in cognitive improvement, particularly in younger populations.",
+      "distortion_type": "scope_inflation",
+      "domain": "neuroscience",
+      "distortion_explanation": "The citing claim generalizes the findings from a narrow rodent study to all age groups, which is not supported by the original research.",
+      "id": 33
+    },
+    {
+      "citing_claim": "The findings demonstrate that cognitive-behavioral therapy is effective for all age groups in reducing anxiety symptoms.",
+      "source_passage": "Cognitive-behavioral therapy has shown effectiveness in reducing anxiety symptoms in adolescents, according to our study.",
+      "distortion_type": "scope_inflation",
+      "domain": "psychiatry",
+      "distortion_explanation": "The citing claim generalizes the effectiveness of cognitive-behavioral therapy to all age groups, while the source only reports findings for adolescents.",
+      "id": 34
+    },
+    {
+      "citing_claim": "Recent findings indicate that air pollution significantly increases the risk of respiratory diseases across diverse populations.",
+      "source_passage": "In our study of urban adolescents, we found evidence suggesting that higher levels of air pollution are associated with an increased risk of respiratory symptoms.",
+      "distortion_type": "scope_inflation",
+      "domain": "epidemiology",
+      "distortion_explanation": "The citing claim generalizes findings from a specific study of urban adolescents to a broad statement about diverse populations.",
+      "id": 35
+    },
+    {
+      "citing_claim": "Recent studies indicate that long-term use of drug X significantly enhances cognitive function across all demographics.",
+      "source_passage": "In our study on older adults, drug X showed improvements in specific cognitive tasks, suggesting potential benefits in similar populations.",
+      "distortion_type": "scope_inflation",
+      "domain": "pharmacology",
+      "distortion_explanation": "The claim generalizes findings from a specific study on older adults to all demographics, inflating the scope of the research.",
+      "id": 36
+    },
+    {
+      "citing_claim": "Recent research indicates that immunotherapy dramatically improves overall survival rates in all patients with advanced melanoma.",
+      "source_passage": "In our study of a specific cohort of patients with advanced melanoma, we observed that immunotherapy may improve overall survival rates.",
+      "distortion_type": "scope_inflation",
+      "domain": "oncology",
+      "distortion_explanation": "The citing claim generalizes the findings from a specific cohort to all patients with advanced melanoma, misleadingly inflating the scope of the results.",
+      "id": 37
+    },
+    {
+      "citing_claim": "Recent studies indicate that all patients with heart failure benefit significantly from this new treatment, leading to improved outcomes across diverse populations.",
+      "source_passage": "In our study of patients with heart failure in a specific demographic, we observed that the new treatment showed promising outcomes.",
+      "distortion_type": "scope_inflation",
+      "domain": "cardiology",
+      "distortion_explanation": "The citing claim generalizes the findings from a specific demographic study to all patients with heart failure, which may not be warranted.",
+      "id": 38
+    },
+    {
+      "citing_claim": "Neuroplasticity mechanisms are critical for cognitive enhancement in all age groups.",
+      "source_passage": "Neuroplasticity mechanisms could play a role in cognitive enhancement in older adults, based on studies in this population.",
+      "distortion_type": "scope_inflation",
+      "domain": "neuroscience",
+      "distortion_explanation": "The claim generalizes findings about neuroplasticity in older adults to all age groups, which the source does not support.",
+      "id": 39
+    },
+    {
+      "citing_claim": "Recent findings suggest that cognitive behavioral therapy is effective for all depression subtypes.",
+      "source_passage": "This study focused on the effects of cognitive behavioral therapy in patients with major depressive disorder and did not encompass other subtypes of depression.",
+      "distortion_type": "scope_inflation",
+      "domain": "psychiatry",
+      "distortion_explanation": "The claim inaccurately generalizes the effectiveness of cognitive behavioral therapy to all depression subtypes, while the source specifically studied only major depressive disorder.",
+      "id": 40
+    },
+    {
+      "citing_claim": "The treatment significantly improved overall survival rates in patients with stage IV melanoma.",
+      "source_passage": "In a subset of patients with stage IV melanoma, treatment showed a promising increase in overall survival rates; however, results varied, with some patients experiencing no benefit.",
+      "distortion_type": "cherry_picking",
+      "domain": "oncology",
+      "distortion_explanation": "The citing claim highlights only the positive outcomes while ignoring the mixed results reported in the source.",
+      "id": 41
+    },
+    {
+      "citing_claim": "Recent trials have demonstrated that the new drug significantly reduces the risk of heart attacks in patients with hypertension.",
+      "source_passage": "Some studies indicate that the new drug may reduce the risk of heart attacks in a subset of patients with hypertension, but other trials have shown no significant benefit overall.",
+      "distortion_type": "cherry_picking",
+      "domain": "cardiology",
+      "distortion_explanation": "The claim selectively highlights only the positive findings without acknowledging the mixed results reported in the source.",
+      "id": 42
+    },
+    {
+      "citing_claim": "Increases in neural connectivity have been shown to significantly enhance cognitive flexibility in healthy adults.",
+      "source_passage": "While some studies indicate that increases in neural connectivity may enhance cognitive flexibility, others have found that these enhancements do not occur universally across all populations.",
+      "distortion_type": "cherry_picking",
+      "domain": "neuroscience",
+      "distortion_explanation": "The claim selectively highlights positive results without acknowledging the mixed findings reported in the source.",
+      "id": 43
+    },
+    {
+      "citing_claim": "Patients with generalized anxiety disorder showed significant improvement after treatment with Cognitive Behavioral Therapy.",
+      "source_passage": "While some patients with generalized anxiety disorder reported improvement after treatment with Cognitive Behavioral Therapy, others experienced minimal changes or even worsening of symptoms.",
+      "distortion_type": "cherry_picking",
+      "domain": "psychiatry",
+      "distortion_explanation": "The citation highlights only the positive outcome of Cognitive Behavioral Therapy while ignoring the mixed results observed in the broader population studied.",
+      "id": 44
+    },
+    {
+      "citing_claim": "The study found a significant reduction in disease incidence among participants who engaged in regular physical activity.",
+      "source_passage": "The results indicated a reduction in disease incidence among participants who engaged in regular physical activity; however, results for other demographics were mixed, showing no effect in certain groups.",
+      "distortion_type": "cherry_picking",
+      "domain": "epidemiology",
+      "distortion_explanation": "The citing claim selectively highlights the positive outcome of regular physical activity while ignoring the mixed results reported for other demographics.",
+      "id": 45
+    },
+    {
+      "citing_claim": "A recent study conclusively demonstrated that Drug X significantly enhances patient outcomes in the treatment of hypertension.",
+      "source_passage": "In our study of Drug X, we observed improved outcomes in a subset of patients treated for hypertension, although results were mixed overall with some patients reporting no significant changes.",
+      "distortion_type": "cherry_picking",
+      "domain": "pharmacology",
+      "distortion_explanation": "The citing claim selectively highlights only the positive results from the study while ignoring the mixed outcomes reported for the entire patient group.",
+      "id": 46
+    },
+    {
+      "citing_claim": "The new immunotherapy has shown significant efficacy in reducing tumor size in patients with advanced melanoma.",
+      "source_passage": "While some patients in the study responded well to the new immunotherapy and experienced a reduction in tumor size, others did not respond, highlighting the variability in treatment outcomes.",
+      "distortion_type": "cherry_picking",
+      "domain": "oncology",
+      "distortion_explanation": "The citing claim focuses only on the positive outcomes of the treatment, ignoring the mixed results reported in the source.",
+      "id": 47
+    },
+    {
+      "citing_claim": "Recent studies have shown that patients who engage in regular aerobic exercise experience significant improvements in heart function.",
+      "source_passage": "In our study, we observed that while some patients who engaged in regular aerobic exercise exhibited improvements in heart function, others showed no change or even slight declines, indicating mixed results regarding the impact of exercise on overall cardiac health.",
+      "distortion_type": "cherry_picking",
+      "domain": "cardiology",
+      "distortion_explanation": "The citing claim selectively highlights only the positive outcomes of aerobic exercise while ignoring the mixed results reported in the source.",
+      "id": 48
+    },
+    {
+      "citing_claim": "Increased neural connectivity was consistently observed in participants following a mindfulness regimen, indicating significant enhancements in cognitive function.",
+      "source_passage": "Some studies have reported increases in neural connectivity and enhancements in cognitive function following mindfulness practices, although results can vary significantly across different populations and methodologies.",
+      "distortion_type": "cherry_picking",
+      "domain": "neuroscience",
+      "distortion_explanation": "The claim selectively emphasizes only the positive results of increased connectivity without acknowledging the mixed outcomes reported in the source.",
+      "id": 49
+    },
+    {
+      "citing_claim": "The use of cognitive-behavioral therapy significantly reduced anxiety levels in patients with generalized anxiety disorder.",
+      "source_passage": "In some cases, cognitive-behavioral therapy was associated with a reduction in anxiety levels, but results were mixed across the sample, with some individuals showing little to no improvement.",
+      "distortion_type": "cherry_picking",
+      "domain": "psychiatry",
+      "distortion_explanation": "The citing claim highlights only the positive outcomes of cognitive-behavioral therapy while ignoring the mixed results observed in the study.",
+      "id": 50
+    }
+  ]
+}

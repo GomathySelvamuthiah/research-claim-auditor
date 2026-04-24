@@ -1,0 +1,21 @@
+Record ID,Title,Author,Journal,Year,DOI,Retraction Date,Reason
+RW-10001,Effects of Lipid Nanoparticle Formulations on Hepatic Gene Expression in Murine Models,Martinez et al.,Journal of Controlled Release,2018,10.1016/j.jconrel.2018.04.021,2020-03-15,Data Fabrication
+RW-10002,CRISPR-Cas9 Mediated Correction of the Sickle Cell Mutation in Human Hematopoietic Stem Cells,Chen & Zhang,Nature Medicine,2019,10.1038/s41591-019-0453-2,2021-07-08,Image Manipulation
+RW-10003,Microbiome Composition as a Predictor of Colorectal Cancer Recurrence After Surgical Resection,Patel et al.,Gastroenterology,2017,10.1053/j.gastro.2017.08.033,2019-11-22,Plagiarism
+RW-10004,Longitudinal Cognitive Decline in Type 2 Diabetes: A 10-Year Population Cohort Study,Kim et al.,Diabetes Care,2016,10.2337/dc16-0847,2018-05-04,Statistical Error
+RW-10005,Checkpoint Inhibitor Immunotherapy Efficacy in Metastatic Pancreatic Adenocarcinoma,Williams & Thompson,Journal of Clinical Oncology,2020,10.1200/JCO.20.00482,2022-01-17,Data Fabrication
+RW-10006,Epigenetic Reprogramming of FOXP3+ Regulatory T Cells in Autoimmune Hepatitis,Singh et al.,Hepatology,2015,10.1002/hep.27823,2017-09-30,Image Manipulation
+RW-10007,Neonatal BCG Vaccination and Heterologous Immune Training: A Randomized Controlled Trial,Osei-Kwasi et al.,The Lancet Infectious Diseases,2018,10.1016/S1473-3099(18)30495-4,2020-06-12,Ethical Violation
+RW-10008,Mitochondrial Fission Promotes Tau Aggregation and Neurodegeneration in Alzheimer's Disease,Park et al.,EMBO Journal,2019,10.15252/embj.2019102820,2021-04-20,Data Falsification
+RW-10009,Long-term Efficacy of Vedolizumab in Moderately-to-Severely Active Crohn's Disease,Harrison et al.,Gut,2017,10.1136/gutjnl-2017-313773,2019-03-01,Duplicate Publication
+RW-10010,Inflammatory Cytokine Profiles in Severe COVID-19 Predict ICU Admission and Mortality,Russo et al.,Critical Care Medicine,2020,10.1097/CCM.0000000000004594,2021-12-09,Statistical Error
+RW-10011,Genome-Wide Association Study Identifies Novel Loci for Systemic Lupus Erythematosus in East Asian Populations,Lee et al.,Human Molecular Genetics,2016,10.1093/hmg/ddw207,2018-08-14,Image Manipulation
+RW-10012,Fecal Microbiota Transplantation for Recurrent Clostridioides difficile Infection: Five-Year Follow-Up,Johansson et al.,Clinical Infectious Diseases,2019,10.1093/cid/ciz318,2021-10-27,Ethical Violation
+RW-10013,Targeting the PD-1/PD-L1 Axis in Hepatocellular Carcinoma: Phase II Trial Results,Nakamura et al.,Annals of Oncology,2018,10.1093/annonc/mdy159,2020-07-31,Data Fabrication
+RW-10014,Stem Cell-Derived Organoids as Models for Rare Mitochondrial Myopathies,Garcia et al.,Cell Stem Cell,2020,10.1016/j.stem.2020.02.014,2022-04-05,Image Manipulation
+RW-10015,Placebo-Controlled Trial of Ketamine for Treatment-Resistant Bipolar Depression,Andersen et al.,JAMA Psychiatry,2017,10.1001/jamapsychiatry.2017.2414,2019-06-18,Undisclosed Conflict of Interest
+RW-10016,Wearable Biosensor Prediction of Postoperative Atrial Fibrillation in Cardiac Surgery,Pham et al.,Heart Rhythm,2019,10.1016/j.hrthm.2019.07.018,2021-09-03,Statistical Error
+RW-10017,Macrophage Polarization by Tumor-Derived Exosomes Drives Immunosuppression in Ovarian Cancer,Volkov et al.,Cancer Research,2018,10.1158/0008-5472.CAN-17-3698,2020-11-16,Plagiarism
+RW-10018,Neuroprotective Role of Exogenous Melatonin in Neonatal Hypoxic-Ischemic Brain Injury,Santos et al.,Pediatric Research,2016,10.1038/pr.2016.177,2018-02-27,Data Falsification
+RW-10019,Antisense Oligonucleotide Reduction of APOC3 in Familial Chylomicronemia Syndrome,Eriksson & Olofsson,New England Journal of Medicine,2017,10.1056/NEJMoa1611836,2019-05-14,Duplicate Publication
+RW-10020,Single-Cell RNA Sequencing Reveals Tumor Microenvironment Heterogeneity in Triple-Negative Breast Cancer,Wang et al.,Nature Communications,2021,10.1038/s41467-021-21892-9,2023-02-08,Image Manipulation

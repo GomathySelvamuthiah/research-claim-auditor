@@ -1,0 +1,15 @@
+openai
+faiss-cpu
+sentence-transformers
+requests
+pandas
+numpy
+python-dotenv
+streamlit
+reportlab
+matplotlib
+seaborn
+tiktoken
+pydantic
+pytest
+difflib
