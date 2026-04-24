@@ -169,30 +169,34 @@ with tab1:
 
         # Optional source documents
         with st.expander("➕ Add Source Documents (optional)"):
-            st.text_area("Source document text", key="src_text_input", height=150)
-            st.text_input("DOI (optional)", key="src_doi_input")
-            st.text_input("Title", key="src_title_input")
+            if "src_form_counter" not in st.session_state:
+                st.session_state.src_form_counter = 0
+
+            counter = st.session_state.src_form_counter
+
+            src_text = st.text_area(
+                "Source document text",
+                key=f"src_text_{counter}",
+                height=150,
+            )
+            src_doi = st.text_input("DOI (optional)", key=f"src_doi_{counter}")
+            src_title_val = st.text_input("Title", key=f"src_title_{counter}")
 
             if st.button("Add Source"):
-                if st.session_state.get("src_text_input", "").strip():
+                if src_text.strip():
                     st.session_state.source_docs.append({
-                        "full_text": st.session_state.src_text_input,
-                        "doi": st.session_state.get("src_doi_input", "").strip() or "",
-                        "title": st.session_state.get("src_title_input", "").strip() or "Untitled Source",
+                        "full_text": src_text,
+                        "doi": src_doi.strip() or "",
+                        "title": src_title_val.strip() or "Untitled Source",
                         "year": 2024,
                     })
-                    st.success(f"Added source #{len(st.session_state.source_docs)}")
-                    st.session_state.src_text_input = ""
-                    st.session_state.src_doi_input = ""
-                    st.session_state.src_title_input = ""
+                    st.session_state.src_form_counter += 1
                     st.rerun()
                 else:
                     st.warning("Source text cannot be empty.")
 
             if st.session_state.source_docs:
-                st.info(
-                    f"{len(st.session_state.source_docs)} source document(s) added."
-                )
+                st.info(f"{len(st.session_state.source_docs)} source document(s) added.")
 
         # ── Run button ───────────────────────────────────────────────────────
         st.caption(
