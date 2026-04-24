@@ -165,7 +165,7 @@ with tab1:
             else:
                 paper_text = ""
         else:
-            paper_text = st.text_area("Paste Introduction Section", value=_load_sample_text(), height=300)
+            paper_text = st.text_area("Paste Introduction Section", value="", height=300)
 
         # Optional source documents
         with st.expander("➕ Add Source Documents (optional)"):
